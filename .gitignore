@@ -1,0 +1,86 @@
+# Dependencies
+node_modules
+.pnpm-store
+jspm_packages/
+
+# Build outputs
+.next/
+out/
+build/
+dist/
+dist-ssr/
+.nuxt/
+public/
+.out/
+.storybook-out/
+
+# Cache directories
+.cache/
+.parcel-cache/
+.turbo/
+
+# Production builds
+*.local
+*.tgz
+
+# Environment files
+.env*.local
+.env
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+.next/types/**/*.ts
+.next/types/**/*.tsbuildinfo
+
+# Testing
+coverage/
+.nyc_output/
+lcov-report/
+lcov.info
+
+# Storybook
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Optional caches
+.npm/
+.eslintcache
+.node_repl_history
+
+# Temporary folders
+tmp/
+temp/
+
+# Turbo
+.turbo/
+
