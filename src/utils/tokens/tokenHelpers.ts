@@ -1,32 +1,32 @@
 /**
  * Sets a token in localStorage
  * @param token - The token to store
- * @param type - The type of token (access or refresh)
+ * @param key - The exact storage key to use (e.g., accessToken, refresh, id, api, customKey)
  */
-export const setToken = (token: string, type: 'access' | 'refresh'): void => {
+export const setToken = (token: string, key: string): void => {
   if (typeof window !== 'undefined') {
-    localStorage.setItem(`${type}Token`, token);
+    localStorage.setItem(key, token);
   }
 };
 
 /**
  * Gets a token from localStorage
- * @param type - The type of token (access or refresh)
+ * @param key - The exact storage key to use (e.g., accessToken, refresh, id, api, customKey)
  * @returns The token or null if not found
  */
-export const getToken = (type: 'access' | 'refresh'): string | null => {
+export const getToken = (key: string): string | null => {
   if (typeof window !== 'undefined') {
-    return localStorage.getItem(`${type}Token`);
+    return localStorage.getItem(key);
   }
   return null;
 };
 
 /**
  * Removes a token from localStorage
- * @param type - The type of token (access or refresh)
+ * @param key - The exact storage key to use (e.g., accessToken, refresh, id, api, customKey)
  */
-export const removeToken = (type: 'access' | 'refresh'): void => {
+export const removeToken = (key: string): void => {
   if (typeof window !== 'undefined') {
-    localStorage.removeItem(`${type}Token`);
+    localStorage.removeItem(key);
   }
 };

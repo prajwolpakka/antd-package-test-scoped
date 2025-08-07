@@ -103,7 +103,7 @@ const isValidEmail = validateEmail('user@example.com');
 const isValidPassword = validatePassword('MyPassword123');
 const isRequired = validateRequired('value');
 
-setToken('auth', 'token123');
+setToken('token123', 'auth');
 const token = getToken('auth');
 removeToken('auth');
 ```
@@ -141,7 +141,7 @@ Returns:
 ### Utilities
 
 - Validators: validateEmail, validatePassword, validateRequired
-- Tokens: setToken, getToken, removeToken
+- Tokens: setToken(token, key), getToken(key), removeToken(key)
 
 ## Development
 
